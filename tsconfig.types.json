@@ -2,7 +2,7 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
             "outDir": "./dist/_types",
-            "outFile": "./dist/_types/index.d.ts",
+            "outFile": "./index.d.ts",
             "declaration": true,
             "emitDeclarationOnly": true
     }
