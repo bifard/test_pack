@@ -16,10 +16,10 @@
   },
   "exports": {
     "./*": {
-      "types": "./_types/*.d.ts",
-      "require": "./_cjs/*.js",
-      "import": "./_esm/*.js",
-      "default": "./_esm/*.js"
+      "types": "./dist/_types/*.d.ts",
+      "require": "./dist/_cjs/*.js",
+      "import": "./dist/_esm/*.js",
+      "default": "./dist/_esm/*.js"
     }
   },
   "typesVersions": {
@@ -29,5 +29,5 @@
          ]
        }
      },
-     "types": "./index.d.ts"
+  "types": "./index.d.ts"
 }
