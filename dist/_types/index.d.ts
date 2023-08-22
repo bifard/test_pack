@@ -14,3 +14,6 @@ declare module "src/image-service" {
     import { ImageServiceType } from "src/type";
     export const imageService: ImageServiceType;
 }
+declare module "test_pack" {
+    export { imageService } from "src/image-service";
+}
