@@ -31,6 +31,11 @@ npm run build
 ### Публикация
 
 Для публикации пакеты необходимо перейти в папку dist
+
+```bash
+cd dist
+```
+
 ```bash
 npm publish
 ```
