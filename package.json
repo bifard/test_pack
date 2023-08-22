@@ -1,11 +1,10 @@
 {
   "name": "test_pack",
-  "version": "1.1.0",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json && tsc -p tsconfig.types.json && cp package.json dist/package.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -14,20 +13,16 @@
     "@types/node": "^20.5.1",
     "typescript": "^5.1.6"
   },
-  "exports": {
-    "./*": {
-      "types": "./dist/_types/*.d.ts",
-      "require": "./dist/_cjs/*.js",
-      "import": "./dist/_esm/*.js",
-      "default": "./dist/_esm/*.js"
+  "typesVersions": {
+    ">=4.2": {
+      "*": [
+        "./dist/*"
+      ]
     }
   },
-  "typesVersions": {
-       ">=4.2": {
-         "*": [
-           "_types/*"
-         ]
-       }
-     },
-  "types": "./index.d.ts"
+  "type": "module",
+  "typings": "index.d.ts",
+  "files": [
+    "dist"
+  ]
 }
