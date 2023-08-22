@@ -2,6 +2,10 @@
 
 Перед сборкой должен быть установлен глобально TypeScript
 
+```bash
+npm install -g typescript
+```
+
 ### Windows сборка
 
 Удалить dist каталог
